@@ -1,0 +1,24 @@
+pre.prettyprint {
+  padding: 1px;
+  border: 1px solid #111111;
+  overflow: auto;
+  font: 14px Courier, mono;
+  box-shadow: 0 4px 4px 0px #cccccc;
+  white-space: pre;
+}
+
+pre.prettyprint span.line {
+  display: inline-block;
+  width: 100%;
+  white-space: pre;
+  overflow: none;
+}
+
+pre.prettyprint span.line:before {
+  width: 35px;
+  border-right: 1px dotted #cccccc;
+  display: inline-block;
+  text-align: right;
+  counter-increment: line;
+  content: counter(line) " ";
+}

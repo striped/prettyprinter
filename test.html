@@ -1,0 +1,66 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+  <head>
+    <title>Javascript code prettifier</title>
+    <link href="target/classes/prettyprinter.css" type="text/css" rel="stylesheet" />
+    <link href="target/classes/prettyprinter-java.css" type="text/css" rel="stylesheet" />
+    <link href="target/classes/prettyprinter-prompt.css" type="text/css" rel="stylesheet" />
+    <link href="target/classes/prettyprinter-bash.css" type="text/css" rel="stylesheet" />
+  </head>
+  <body>
+    <h1>Test</h1>
+      <pre class="prettyprint java" style="counter-reset: line 89; height:200px">
+import org.junit.Test;
+
+/**
+ * Short description.
+ * &lt;p/&gt;
+ * Detail description.
+ * @todo add JavaDoc
+ */
+public class Power2Test {
+    private byte b = 0x1;
+    private int i = 1;
+    private long l = 999l;
+    private char c = 'a';
+    private char c1 = 1;
+    private float f = 999f;
+    private double d = 999d;
+
+    @Test
+    public void test() {
+        int num = 0;
+        for (int i = 0; i < Integer.MAX_VALUE; i++) {
+            if (0 == (i & (i - 1))) {
+                num++;
+                System.out.printf("%10s: (%32s)%n", Integer.toString(i), Integer.toBinaryString(i));
+            }
+        }
+        System.out.printf("Total: %d", num);
+    }
+}
+      </pre>
+      <pre class="prettyprint prompt" style="counter-reset: line;">
+Val:~ striped$ lsof -i -P
+COMMAND    PID    USER   FD   TYPE     DEVICE SIZE/OFF NODE NAME
+SystemUIS  117 striped   11u  IPv4 0x074d76e0      0t0  UDP *:*
+SystemUIS  117 striped   13u  IPv4 0x074d8810      0t0  UDP *:*
+Skype      140 striped    7u  IPv4 0x074d7528      0t0  UDP localhost:50656
+Skype      140 striped   38u  IPv4 0x0d695f68      0t0  TCP *:3255 (LISTEN)
+Skype      140 striped   39u  IPv4 0x0d69044c      0t0  UDP *:3255
+Skype      140 striped   40u  IPv4 0x11824a98      0t0  TCP 192.168.0.101:56862->157.56.52.28:40022 (ESTABLISHED)
+      </pre>
+      <PRE class="prettyprint bash" style="counter-reset: line;">
+#! /bin/sh
+
+if [ -z "$BTRACE_HOME" -o ! -d "$BTRACE_HOME" ] ; then
+  # resolve links - $0 could be a link to btrace's home
+  PRG="$0"
+  progname=`basename "$0"`
+  BTRACE_HOME=`dirname "$PRG"`/..
+  BTRACE_HOME=`cd "$BTRACE_HOME" && pwd`
+fi
+      </PRE>
+    <script type="text/javascript" src="target/classes/prettyprinter-all.js"></script>
+  </body>
+</html>

@@ -1,0 +1,16 @@
+pre.prompt span.line {
+  background: #101010;
+  color: #00ff00;
+}
+pre.prompt span.line:before {
+  background: #000000;
+  color: #cccccc;
+}
+
+pre.prompt span.line:nth-child(4n) {
+  background: #101010;
+}
+pre.prompt span.line:nth-child(4n+1) {
+  background: #202020;
+}
+

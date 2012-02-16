@@ -1,0 +1,27 @@
+pre.bash span.line:before {
+  background: #ffffff;
+  color: #000000;
+}
+
+pre.bash span.line:nth-child(4n) {
+  background: #ffffff;
+}
+pre.bash span.line:nth-child(4n+1) {
+  background: #f0f0f0;
+}
+
+pre.bash span.comment {
+  color: #808080;
+}
+pre.bash span.keyword {
+  color: #000080;
+  font-weight: bold;
+}
+pre.bash span.string-literal {
+  color: #008000;
+  font-weight: bold;
+}
+pre.bash span.numeric-literal {
+  color: #0000ff;
+}
+

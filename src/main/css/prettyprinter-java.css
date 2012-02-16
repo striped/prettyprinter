@@ -1,0 +1,31 @@
+pre.java span.line:before {
+  background: #ececec;
+  color: #991111;
+}
+
+pre.java span.line:nth-child(4n) {
+  background: #ffffff;
+}
+pre.java span.line:nth-child(4n+1) {
+  background: #f0f0f0;
+}
+
+pre.java span.comment {
+  color: #808080;
+}
+pre.java span.keyword {
+  color: #000080;
+  font-weight: bold;
+}
+pre.java span.annotation {
+  color: #808000;
+  font-weight: bold;
+}
+pre.java span.string-literal {
+  color: #008000;
+  font-weight: bold;
+}
+pre.java span.numeric-literal {
+  color: #0000ff;
+}
+
