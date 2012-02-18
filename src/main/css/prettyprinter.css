@@ -2,16 +2,16 @@ pre.prettyprint {
   padding: 1px;
   border: 1px solid #111111;
   overflow: auto;
-  font: 14px Courier, mono;
-  box-shadow: 0 4px 4px 0px #cccccc;
+  box-shadow: 0 2px 2px 0px #cccccc;
   white-space: pre;
+  counter-reset: line;
 }
 
 pre.prettyprint span.line {
   display: inline-block;
   width: 100%;
-  white-space: pre;
   overflow: none;
+  word-wrap: normal;
 }
 
 pre.prettyprint span.line:before {
