@@ -1,0 +1,39 @@
+pre.xml span.line:before {
+  background: #f0f0f0;
+  color: #111;
+}
+
+pre.xml span.line:nth-child(4n) {
+  background: #ffffff;
+}
+pre.xml span.line:nth-child(4n+1) {
+  background: #f0f0f0;
+}
+
+pre.xml span.pi {
+  color: #991111;
+}
+pre.xml span.doctype {
+  color: #111;
+  font-weight: bold;
+}
+pre.xml span.comment {
+  color: #808080;
+  font-style:italic;
+}
+pre.xml span.cdata {
+  color: #808080;
+  font-weight: bold;
+}
+pre.xml span.attribute {
+  color: #0000ff;
+  font-weight: bold;
+}
+pre.xml span.value {
+  color: #008000;
+}
+pre.xml span.tag {
+  color: #000080;
+  font-weight: bold;
+}
+

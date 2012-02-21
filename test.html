@@ -6,6 +6,7 @@
     <link href="target/classes/prettyprinter-java.css" type="text/css" rel="stylesheet" />
     <link href="target/classes/prettyprinter-prompt.css" type="text/css" rel="stylesheet" />
     <link href="target/classes/prettyprinter-bash.css" type="text/css" rel="stylesheet" />
+    <link href="target/classes/prettyprinter-xml.css" type="text/css" rel="stylesheet" />
   </head>
   <body>
     <h1>Test</h1>
@@ -63,6 +64,22 @@ if [ -z "$BTRACE_HOME" -o ! -d "$BTRACE_HOME" ] ; then
   BTRACE_HOME=`cd "$BTRACE_HOME" && pwd`
 fi
       </PRE>
+<pre class="prettyprint xml" style="counter-reset: line 0">
+&lt;?xml version="1.0" encoding="utf-8"? ?&gt;
+&lt;!DOCTYPE html&gt;
+&lt;!-- Comment --&gt;
+&lt;root&gt;
+	&lt;item color="red"&gt;
+		&lt;desc&gt;This is the first item.&lt;/desc&gt;
+	&lt;/item&gt;
+	&lt;item color="blue"&gt;
+		&lt;desc&gt;This is the second item.&lt;/desc&gt;
+	&lt;/item&gt;
+	&lt;![CDATA[
+		This example only contains two items.
+	]]&gt;
+&lt;/root&gt;
+</pre>
     <script type="text/javascript" src="target/classes/prettyprinter-all.js"></script>
   </body>
 </html>

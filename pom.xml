@@ -50,6 +50,7 @@
                                 <include>**/lexer.js</include>
                                 <include>**/lexer-java.js</include>
                                 <include>**/lexer-bash.js</include>
+                                <include>**/lexer-xml.js</include>
                                 <include>**/prettyprinter.js</include>
                             </includes>
                         </aggregation>
